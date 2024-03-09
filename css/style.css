@@ -288,7 +288,7 @@ header{
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 18.2em;
+    bottom: 18.5em;
 }
 
 .tariff{
@@ -498,6 +498,7 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 2em;
+    
 }
 
 footer > .container {
