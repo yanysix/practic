@@ -289,6 +289,7 @@ header{
     justify-content: flex-end;
     position: relative;
     bottom: 18.5em;
+    left: 8em;
 }
 
 .tariff{
@@ -511,6 +512,7 @@ footer > .container {
     display: flex;
     flex-direction: column;
     width: 20em;
+    
 }
 
 .footer-contacts p:first-child{
