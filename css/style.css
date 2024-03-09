@@ -1,0 +1,583 @@
+@font-face {
+    font-family: 'Montserrat-VariableFont_wght';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('ttf');
+
+    font-family: 'Montserrat-Medium';
+    src: url(fonts/Montserrat/static/Montserrat-Medium.ttf) format('ttf');
+
+    font-family: 'Montserrat-Bold';
+    src: url(fonts/Montserrat/static/Montserrat-Bold.ttf) format('ttf');
+
+    font-family: 'Play-Bold';
+    src: url(fonts/Play/Play-Bold.ttf) format('ttf');
+
+    font-family: 'Play-Regular';
+    src: url(fonts/Play/Play-Regular.ttf) format('ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+.montserrat, p, a, button {
+    font-family: 'Montserrat-VariableFont_wght', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.play, h1, h2{
+    font-family: 'Play-Bold', sans-serif;
+    margin: 0;
+}
+
+.m-medium{
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: #333333;
+}
+
+.m-bold{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+}
+
+.text-black-title {
+    color: #1B1C1F;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.container {
+    padding: 0 calc((100% - 1226px) / 2);
+}
+
+.top-block{
+    background-image: url('/img/top-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 1em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.header-menu > a{
+    text-decoration: none;
+}
+
+.header-menu > button {
+    background: none;
+    border: 1px solid #5C17CD;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-size: 16px;
+    margin-left: 3em;
+}
+
+.top_info{
+    display: flex;
+    align-items: stretch;
+    gap: 6em;
+    justify-content: space-between;
+}
+
+.top_info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.top_info-text_description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_info-text_description_scroll-line{
+    background-color: #ffff;
+    margin: 8px 5px 0 0;
+    padding: 0;
+    width: 5em;
+    height: 1px;
+}
+
+.top_info-text_description_block-scroll{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.top_info-text_description_block-scroll > p{
+    margin: 0;
+}
+
+.top_info-text_description_block-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    width: 15em;
+}
+
+.top_info-text_description_block-description > p{
+    margin: 0;
+}
+
+.top_info-text_description_block-description > button {
+    background: #386DF4;
+    border: none;
+    border-radius: 0.4em;
+    height: 3em;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.top-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.top-slider_button-arrow{
+    display: flex;
+    gap: 0.5em;
+}
+
+.top-slider_button-arrow > button{
+    background: #386DF4;
+    border: none;
+    border-radius: 0.4em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    height: 2em;
+    width: 2em;
+}
+
+.top-slider_button-arrow button:first-child{
+    filter: brightness(50%);
+}
+
+.top-slider_slide-bar{
+    display: flex;
+}
+
+.top-slider_slide-bar > div{
+    background: none;
+    border-top: none;
+    border-right: 0.1em solid;
+    border-bottom: 0.1em solid;
+    border-left: 0.1em solid;
+    border-color: #FFFFFF;
+    width: 17em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.top-slider_slide-bar > div > p {
+    position: relative;
+    bottom: 0.5em;
+}
+
+.unhover-filter{
+    filter: brightness(50%);
+}
+
+.services{
+    margin-top: 2em;
+}
+
+.services-title-and-footnote{
+    display: flex;
+    flex-direction: column;
+}
+
+.services-footnote{
+    display: flex;
+    width: 48em;
+    align-self: flex-end;
+}
+
+.services-footnote > hr{
+    background-color: #4466FB;
+    width: 2px;
+}
+
+.services-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    width: 15em;
+    padding: 2em;
+    box-shadow: 0 0 10px darkgray;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.card-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.card > div, .card > p {
+    margin: 0;
+}
+
+.download-app-section{
+    margin-top: 5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 28em;
+}
+
+.download-app-section > ul {
+    list-style-type: none;
+}
+
+.download-app-section > ul > li::before {
+    content: "\2713";
+    color: #4466FB;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+.download-app-section > ul {
+    margin-top: 3em;
+}
+
+.download-app-tables {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.download-app-table{
+    cursor: pointer;
+}
+
+.background-download-app{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 18.2em;
+}
+
+.tariff{
+    background-image: url('/img/background-for-tariff.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    gap: 2em;
+
+}
+
+.tariff > h1{
+    margin-top: 0.5em;
+}
+
+.tariff-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tariff-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 17.4em;
+    border-radius: 2%;
+    border: 1px solid #FFFFFF;
+    padding: 2em;
+    filter: brightness(50%);
+}
+
+.tariff-card > button{
+    border: 1px solid #386DF4;
+    background: none;
+    border-radius: 0.4em;
+    height: 3em;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tariff-card-hover{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 17.4em;
+    border-radius: 1%;
+    border: 1px solid #FFFFFF;
+    padding: 2em;
+}
+
+.tariff-sell{
+    display: flex;
+    align-items: flex-start;
+}
+
+.tariff-sell > p{
+    margin: 0;
+    position: relative;
+    top: 0.6em;
+    left: 0.2em;
+}
+
+.tariff-card-hover > button{
+    background: #386DF4;
+    border: none;
+    border-radius: 0.4em;
+    height: 3em;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ready-made-solutions{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 2em 0;
+    gap: 2em;
+}
+
+.ready-made-solutions > h1{
+    margin-top: 0.5em;
+}
+
+.ready-made-solution-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ready-made-solution-card{
+    width: 15em;
+    padding: 2em;
+    box-shadow: 0 0 10px darkgray;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ready-made-solution-card div:first-child{
+    display: flex;
+    justify-content: center;
+}
+
+.ready-made-solution-card-footnote{
+    background-color: #386DF4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    width: 7em;
+    height: 2em;
+    font-size: 12px;
+    align-items: center;
+}
+
+.ready-made-solution-card-footnote > p{
+    margin: 0;
+}
+
+.ready-made-solutions > a{
+    text-align: end;
+    color: #4466FB;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+}
+
+.news-company{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 2em 0;
+    margin-bottom: 2em;
+    gap: 2em;
+}
+
+.news-company > h1{
+    margin-top: 0.5em;
+}
+
+.news-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2em;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+}
+
+.news-frame{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    height: 1em;
+    border-radius: 2%;
+}
+
+.news-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0.5em;
+}
+
+.news-info > h2{
+    width: 15em;
+}
+
+.news-date{
+    background-color: #386DF4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    width: 7em;
+    height: 2em;
+    font-size: 12px;
+    align-items: center;
+}
+
+.news-date > p{
+    margin: 0;
+}
+
+.news-description{
+    width: 30em;
+}
+
+.news-block > a{
+    text-align: end;
+    color: #4466FB;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+}
+
+button{
+    cursor: pointer;
+}
+
+footer{
+    padding-top: 2em;
+    background-image: url("/img/background-for-footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 2em;
+}
+
+footer > .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+.footer-contacts p:first-child{
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer-contacts > a{
+    text-decoration: none;
+    color: #53ACFF;
+    margin-bottom: 1em;
+}
+
+.footer-download-buttons{
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 2em;
+}
+
+.footer-useful-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-useful-links > p{
+    margin: 0;
+}
+
+.footer-useful-links-link{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer-useful-links-link > a{
+    text-decoration: none;
+    color: #F9F9F9;
+}
+
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    width: 28em;
+}
+
+.footer-form > p{
+    margin: 0 0 1em 0;
+}
+
+.footer-form > form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.footer-form > form > input{
+    height: 3.5em;
+    border: none;
+    border-radius: 0.4em;
+    padding-left: 0.9em;
+}
+.footer-form > form > button{
+    height: 3em;
+    background: #386DF4;
+    border: none;
+    border-radius: 0.4em;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
