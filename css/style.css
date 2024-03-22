@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Montserrat-VariableFont_wght';
-    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('ttf');
+    font-family: 'Montserrat-Regular';
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf) format('ttf');
 
     font-family: 'Montserrat-Medium';
     src: url(fonts/Montserrat/static/Montserrat-Medium.ttf) format('ttf');
@@ -13,6 +13,9 @@
 
     font-family: 'Play-Regular';
     src: url(fonts/Play/Play-Regular.ttf) format('ttf');
+
+    font-family: 'Montserrat-SemiBold';
+    src: url(fonts/Montserrat/static/Montserrat-SemiBold.ttf) format('ttf');
 }
 
 body{
@@ -28,8 +31,12 @@ h2{
     font-size: 26px;
 }
 
+.m-semib{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
 .montserrat, p, a, button {
-    font-family: 'Montserrat-VariableFont_wght', sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -42,6 +49,8 @@ h2{
 .m-medium{
     font-family: 'Montserrat-Medium', sans-serif;
     color: #333333;
+    font-weight: 550;
+    filter: opacity(0.6);
 }
 
 .m-bold{
@@ -62,15 +71,15 @@ h2{
 }
 
 .top-block{
-    background-image: url('/img/top-background.png');
+    background-image: url('../img/top-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 45.6em;
+    height: 42.6em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
 }
 
 header{
@@ -87,6 +96,10 @@ header{
 
 .header-menu > a{
     text-decoration: none;
+}
+
+.header-menu > a:first-child{
+    filter: opacity(1);
 }
 
 .header-menu > button {
@@ -117,11 +130,10 @@ header{
 }
 
 .top_info-text_description_scroll-line{
-    background-color: #ffff;
     margin: 8px 5px 0 0;
     padding: 0;
     width: 5em;
-    height: 1px;
+    height: 0px;
 }
 
 .top_info-text_description_block-scroll{
@@ -143,6 +155,7 @@ header{
 
 .top_info-text_description_block-description > p{
     margin: 0;
+    line-height: 130%;
 }
 
 .top_info-text_description_block-description > button {
@@ -191,14 +204,15 @@ header{
     border-bottom: 0.1em solid;
     border-left: 0.1em solid;
     border-color: #FFFFFF;
-    width: 17em;
+    width: 21em;
+    height: 0.7em;
     text-align: center;
     cursor: pointer;
 }
 
 .top-slider_slide-bar > div > p {
     position: relative;
-    bottom: 0.5em;
+    bottom: 0.8em;
 }
 
 .unhover-filter{
@@ -206,7 +220,7 @@ header{
 }
 
 .services{
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 .services-title-and-footnote{
@@ -218,27 +232,29 @@ header{
     display: flex;
     width: 48em;
     align-self: flex-end;
+    margin-top: 2em;
+    gap: 1em;
+    line-height: 140%;
 }
 
 .services-footnote > hr{
-    background-color: #4466FB;
-    width: 2px;
+    filter: opacity(0.2);
+    border-color: #4466FB;
 }
 
 .services-cards{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 2em;
 }
 
 .card{
-    width: 15em;
+    width: 20em;
     padding: 2em;
-    box-shadow: 0 0 10px darkgray;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     display: flex;
     flex-direction: column;
-    gap: 2em;
 }
 
 .card-logo{
@@ -248,14 +264,24 @@ header{
 
 .card > div, .card > p {
     margin: 0;
+    line-height: 150%;
+}
+
+.card > p:nth-child(2){
+    margin-top: 2.3em;
+    font-size: 20px;
+}
+
+.card > p:nth-child(3){
+    margin-top: 1.5em;
 }
 
 .download-app-section{
-    margin-top: 5em;
-    background-size: cover;
+    margin-top: 8em;
     background-repeat: no-repeat;
-    background-position: center;
     height: 28em;
+    background-image: url("../img/background-for-dowload-app-section.png");
+    background-position: right bottom;
 }
 
 .download-app-section > ul {
@@ -284,28 +310,17 @@ header{
     cursor: pointer;
 }
 
-.background-download-app{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    bottom: 18.5em;
-    left: 8em;
-}
-
 .tariff{
-    background-image: url('/img/background-for-tariff.png');
+    background-image: url('../img/background-for-tariff.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2em;
+    padding-top: 7.8em;
+    padding-bottom: 7.8em;
     gap: 2em;
 
-}
-
-.tariff > h1{
-    margin-top: 0.5em;
 }
 
 .tariff-cards{
@@ -313,14 +328,17 @@ header{
     justify-content: space-between;
 }
 
-.tariff-card{
+.tariff-cards > div {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: 17.4em;
+    width: 20em;
+    padding: 2.3em;
+}
+
+.tariff-card{
     border-radius: 2%;
     border: 1px solid #FFFFFF;
-    padding: 2em;
     filter: brightness(50%);
 }
 
@@ -334,13 +352,8 @@ header{
 }
 
 .tariff-card-hover{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 17.4em;
     border-radius: 1%;
     border: 1px solid #FFFFFF;
-    padding: 2em;
 }
 
 .tariff-sell{
@@ -355,6 +368,15 @@ header{
     left: 0.2em;
 }
 
+.tariff-card > p, .tariff-card-hover > p {
+    line-height: 150%;
+    filter: opacity(0.7);
+}
+
+.tariff-card-hover > p{
+    color: #FFFFFF;
+}
+
 .tariff-card-hover > button{
     background: #386DF4;
     border: none;
@@ -367,13 +389,11 @@ header{
 .ready-made-solutions{
     display: flex;
     flex-direction: column;
-    margin: 2em 0 2em 0;
+    margin: 4em 0 4em 0;
     gap: 2em;
 }
 
-.ready-made-solutions > h1{
-    margin-top: 0.5em;
-}
+
 
 .ready-made-solution-cards{
     display: flex;
@@ -381,9 +401,9 @@ header{
 }
 
 .ready-made-solution-card{
-    width: 15em;
+    width: 20em;
     padding: 2em;
-    box-shadow: 0 0 10px darkgray;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     display: flex;
     flex-direction: column;
@@ -395,7 +415,7 @@ header{
 }
 
 .ready-made-solution-card-footnote{
-    background-color: #386DF4;
+    background-color: #384E85;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -420,9 +440,10 @@ header{
 .news-company{
     display: flex;
     flex-direction: column;
-    padding: 2em 0 2em 0;
+    padding: 4em 0 4em 0;
     margin-bottom: 2em;
     gap: 2em;
+    background-color: #FDFDFD;
 }
 
 .news-company > h1{
@@ -447,11 +468,12 @@ header{
     border-right: 1px solid black;
     height: 1em;
     border-radius: 2%;
+    filter: opacity(0.2);
 }
 
 .news-info{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
     bottom: 0.5em;
@@ -462,7 +484,7 @@ header{
 }
 
 .news-date{
-    background-color: #386DF4;
+    background-color: #384E85;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -478,6 +500,7 @@ header{
 
 .news-description{
     width: 30em;
+    line-height: 150%;
 }
 
 .news-block > a{
@@ -493,13 +516,12 @@ button{
 }
 
 footer{
-    padding-top: 2em;
-    background-image: url("/img/background-for-footer.png");
+    padding-top: 4em;
+    background-image: url("../img/background-for-footer.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 2em;
-    
 }
 
 footer > .container {
@@ -512,11 +534,17 @@ footer > .container {
     display: flex;
     flex-direction: column;
     width: 20em;
-    
 }
 
-.footer-contacts p:first-child{
+.footer-contacts > p{
     font-weight: 600;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.footer-contacts > a > p{
+    color: #FFFFFF;
+    filter: opacity(1);
     margin: 0;
 }
 
@@ -532,10 +560,14 @@ footer > .container {
     margin-bottom: 2em;
 }
 
+.footer-contacts-copyright{
+    color: #333333;
+}
+
 .footer-useful-links{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2em;
 }
 
 .footer-useful-links > p{
@@ -556,7 +588,7 @@ footer > .container {
 .footer-form{
     display: flex;
     flex-direction: column;
-    width: 28em;
+    width: 25em;
 }
 
 .footer-form > p{
